@@ -43,14 +43,15 @@ section:nth-of-type(1) {
     font-size: 1.2rem;
 }
 
-.about-img {
-    height: 300px;
-    width: auto;
-}
-
 .about-images {
     display: flex;
+    flex-direction: column;
     width: 100%;
+}
+
+.about-img {
+    height: 550px;
+    width: auto;
 }
 
 .about-aside {
@@ -81,6 +82,7 @@ section:nth-of-type(1) {
     .about-images {
         margin: 0;
         width: 100%;
+        flex-direction: row;
         justify-content: space-evenly;
     }
 
@@ -98,7 +100,7 @@ section:nth-of-type(1) {
     }
 }
 
-@media (min-width: 925px) {
+@media (min-width: 1050px) {
     .about {
         align-items: center;
     }
@@ -107,7 +109,7 @@ section:nth-of-type(1) {
         margin: 2rem 0;
     }
     .about-img {
-        height: 600px;
+        height: 525px;
         width: auto;
     }
     .about-aside p {
