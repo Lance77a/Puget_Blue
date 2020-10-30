@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/theme.css">
     <link rel="stylesheet" href="assets/css/contact.css">
 </head>
+
 <body>
     <header>
         <h2><a href="./index.html">Puget Blue</a></h2>
@@ -18,7 +20,38 @@
         </nav>
     </header>
     <section>
-        
+        <article class="contact-info">
+            <img src="./assets/img/contact.jpg">
+            <h1>Puget Blue Contact Info -</h1>
+            <p>Phone Number: 1-877-2020</p>
+            <p>Email: PugetBlue@TheDocks.com</p>
+            <p>Address: 2127 Dock Way, Shoreline</p>
+            <hr />
+        </article>
+        <article class="contact-form">
+            <h2>Did we miss you at the docks? Puget Blue is always on the move so please reach out to
+                us below or by phone.</h2>
+            <!-- Formspree or other form handler below -->
+            <form action="#" method="#">
+                <label for="name">Name:</label>
+                    <input class="form-text" type="text" name="name" id="name" placeholder="Jack Jackson" required>
+                <label for="phone">Phone Number?</label>
+                    <input class="form-text" type="tel" name="phone" id="phone" placeholder="(optional)" minlength="7">
+                <label for="email">Email:</label>
+                    <input class="form-text" type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                <p>Would you like to receive updates on promotional offers and kept in the loop for our new adventures?</p>
+                <div class="radio">
+                    <label for="newsletter">Yes:</label>
+                            <input type="radio" name="newsletter" id="newsletter-yes" value="yes" checked>
+                    <label for="newsletter">No:</label>
+                        <input type="radio" name="newsletter" id="newsletter-no" value="no">
+                </div>
+                <label for="question">Have a question?</label>
+                    <textarea id="question" name="question?" value="question">
+                    </textarea>
+                <button id="submit">Submit!</button>
+            </form>
+        </article>
     </section>
 
 </body>
@@ -31,5 +64,7 @@
         <li><a href="#"><i class="fab fa-instagram-square fa-2x"></i></a></li>
     </ul>
 </footer>
+<script src="./assets/scripts/form_handler.js"></script>
 </body>
+
 </html>

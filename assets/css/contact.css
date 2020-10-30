@@ -1,0 +1,128 @@
+section {
+    margin-top: 7rem;
+    padding: 0;
+    text-align: center;
+}
+
+.contact-info {
+    font-size: 1.1rem;
+    margin: 0 0 2rem 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.contact-info img {
+    height: auto;
+    width: 100%;
+}
+
+.contact-info h1 {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+}
+
+.contact-info p {
+    padding: 0;
+}
+
+.contact-info hr {
+    margin: 2rem 0 0 0;
+    width: 70%;
+}
+
+.contact-form {
+    font-size: 1rem;
+}
+
+.contact-form h2 {
+    margin: 2rem;
+    font-size: 1.3rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    flex-wrap: nowrap;
+	width: 100%;
+}
+
+.contact-form h2 {
+    margin: 1rem 0;
+	width: 95%;
+	font-size: 1.1rem;
+	color: #555;
+}
+
+#newsletter {
+    margin: 1rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	width: 100%;
+	font-size: 1.1rem;
+	color: #555;
+}
+
+form > p {
+    width: 95%;
+}
+
+.form-text {
+    width: 20rem;
+    height: 2.5rem;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+button {
+    font-size: 1.1rem;
+    height: 4rem;
+    width: 8rem;
+    margin: 1rem 0;
+    color: #3f51b5;
+}
+
+button:hover {
+    font-weight: bold;
+}
+
+.radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 0;
+}
+
+.radio > input {
+    height: 1rem;
+    width: 1rem;
+    margin: 0 1rem;
+}
+
+textarea {
+    height: 5rem;
+    width: 20rem;
+    margin: 1rem 0;
+}
+
+@media (min-width: 775px) {
+    section {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contact-form {
+        width: 300px;
+        height: 400px;
+    }
+}
