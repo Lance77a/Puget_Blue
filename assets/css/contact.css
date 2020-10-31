@@ -1,35 +1,28 @@
 section {
     margin-top: 7rem;
     padding: 0;
-    text-align: center;
+}
+
+article {
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
 .contact-info {
-    font-size: 1.1rem;
     margin: 0 0 2rem 0;
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: nowrap;
 }
 
-.contact-info img {
+.contact-info > img {
     height: auto;
     width: 100%;
 }
 
-.contact-info h1 {
+.contact-info > h1 {
     font-size: 1.4rem;
     margin: 1rem 0;
 }
 
-.contact-info p {
-    padding: 0;
-}
-
-.contact-info hr {
+.contact-info > hr {
     margin: 2rem 0 0 0;
     width: 70%;
 }
@@ -38,25 +31,16 @@ section {
     font-size: 1rem;
 }
 
-.contact-form h2 {
+.contact-form > h2 {
     margin: 2rem;
     font-size: 1.3rem;
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
-	align-items: center;
-	justify-content: center;
-    flex-wrap: nowrap;
-	width: 100%;
-}
-
 .contact-info > h2 {
     margin: 1.8rem 0 0 0;
-	width: 80%;
-	font-size: 1.1rem;
-	color: #555;
+    width: 80%;
+    font-size: 1.1rem;
+    color: #555;
 }
 
 #newsletter {
@@ -67,13 +51,20 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-	width: 100%;
-	font-size: 1.1rem;
-	color: #555;
+    width: 100%;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+form > input, textarea {
+    background-color: #607d8b66;
+    border-radius: 1rem;
+    border: 2px solid #555;
+    outline: none;
 }
 
 form > p {
-    width: 80%;
+    width: 20rem;
 }
 
 .form-text {
@@ -85,10 +76,12 @@ form > p {
 
 button {
     font-size: 1.1rem;
-    height: 4rem;
+    height: 3rem;
     width: 8rem;
-    margin: 1rem 0;
+    margin: 0.75rem 0;
     color: #3f51b5;
+    background-color: #607d8b66;
+    border-radius: 1rem;
 }
 
 button:hover {
@@ -120,7 +113,7 @@ textarea {
         width: auto;
         max-width: 950px;
         height: 650px;
-        margin: 5rem auto 2rem;
+        margin: 2rem auto 2rem;
 
         flex-direction: row;
         justify-content: space-around;
@@ -130,15 +123,9 @@ textarea {
     }
 
     .contact-info {
-        align-items: center;
         height: 600px;
         width: 425px;
         margin: 0;
-    }
-
-    .contact-info > img {
-        width: 100%;
-        height: auto;
     }
 
     .contact-form {
@@ -154,5 +141,4 @@ textarea {
     .form-text {
         margin-top: 0.5rem;
     }
-
 }
