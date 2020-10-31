@@ -2,6 +2,12 @@ body {
 	padding-top: 0
 }
 
+@media (max-width: 760px) {
+	section:nth-of-type(1) {
+		margin-top: 0;
+	}
+}
+
 header {
 	background-color: transparent;
 }
@@ -55,7 +61,7 @@ background-color: #80a3db;
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 760px) {
 	.hero {
 		min-height: 600px;
 	}
@@ -130,7 +136,7 @@ section p {
 	}
 }
 
-@media (max-width: 800px) {
+@media (max-width: 760px) {
 	.destinations .grid li.small,
 	.destinations .grid li.large {
 		flex-basis: 100%;
@@ -154,7 +160,7 @@ section p {
 	margin: 1.5rem 0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 760px) {
 	.packages .grid li {
 		flex-basis: 100%;
 		padding: 1.2rem;
@@ -170,7 +176,7 @@ section p {
 	margin: 2.4rem 0 1.5rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 760px) {
 	.testimonials .quote {
 		font-size: 1.1rem;
 		margin: 1rem 0;
