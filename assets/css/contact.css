@@ -52,9 +52,9 @@ section {
 	width: 100%;
 }
 
-.contact-form h2 {
-    margin: 1rem 0;
-	width: 95%;
+.contact-info > h2 {
+    margin: 1.8rem 0 0 0;
+	width: 80%;
 	font-size: 1.1rem;
 	color: #555;
 }
@@ -73,7 +73,7 @@ form {
 }
 
 form > p {
-    width: 95%;
+    width: 80%;
 }
 
 .form-text {
@@ -115,14 +115,43 @@ textarea {
     margin: 1rem 0;
 }
 
-@media (min-width: 775px) {
+@media (min-width: 760px) {
     section {
+        width: auto;
+        max-width: 950px;
+        height: 650px;
+        margin: 5rem auto 2rem;
+
         flex-direction: row;
-        flex-wrap: wrap;
+        justify-content: space-around;
+
+        border: solid 2px #3f51b599;
+        border-radius: 0.5rem;
+    }
+
+    .contact-info {
+        align-items: center;
+        height: 600px;
+        width: 425px;
+        margin: 0;
+    }
+
+    .contact-info > img {
+        width: 100%;
+        height: auto;
     }
 
     .contact-form {
-        width: 300px;
-        height: 400px;
+        height: 600px;
+        width: 325px;
     }
+
+    form > label {
+        align-self: flex-start;
+    }
+
+    .form-text {
+        margin-top: 0.5rem;
+    }
+
 }
