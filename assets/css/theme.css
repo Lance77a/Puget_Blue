@@ -94,13 +94,14 @@ header {
 }
 
 
-header h2 {
-    font-family: "Quicksand", sans-serif;
+.brand {
     font-size: 1.5em;
 }
 
 header nav {
     display: flex;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2rem;
     margin-right: -15px;
 }
 
