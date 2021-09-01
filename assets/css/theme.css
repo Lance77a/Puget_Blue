@@ -16,6 +16,10 @@ ul, nav {
     list-style: none;
 }
 
+img {
+    object-fit: cover;
+}
+
 section {
     display: flex;
     flex-direction: column;
